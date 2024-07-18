@@ -1,0 +1,11 @@
+.tile {
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out; /* Transition effect */
+}
+
+.tile img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

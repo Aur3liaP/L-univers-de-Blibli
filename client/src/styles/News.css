@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Ghibli";
+  src: url("../assets/fonts/Ghibli-Font/Eyad-Al-Samman-Ghibli.otf")
+    format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.news-container {
+  width: 75%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 10vh auto 15vh;
+
+  .last-news {
+    margin: 4vh 0;
+    font-family: "Ghibli";
+    padding-bottom: 4vh;
+    font-size: 4vh;
+  }
+
+  .line {
+    border-bottom: 1px solid black;
+    margin: 0 0 6vh;
+  }
+
+  .news-box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 2vw;
+    margin-top: 3vh;
+
+    .news-box {
+      /* display: grid;
+      grid-template-rows: 1fr 1fr; */
+      display: flex;
+      flex-direction: column;
+      border-radius: 6px;
+      overflow: hidden;
+      height: auto;
+      transition: 0.2s ease-in-out;
+
+      &&:hover {
+        transform: scale(1.02);
+      }
+
+      .news-img {
+        height: 30vh;
+        width: 100%;
+        /* flex: 1; */
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+      }
+
+      .news-infos {
+        color: rgb(243, 232, 232);
+        padding: 2vh;
+        background-color: #608ddc;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        h3 {
+          padding-bottom: 2vh;
+          font-size: 2vh;
+        }
+
+        p {
+          padding-bottom: 3vh;
+          line-height: 2.3vh;
+          font-size: 1.9vh;
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 1.9vh;
+          color: rgb(243, 232, 232);
+          transition: color 0.3s ease;
+          font-style: italic;
+
+          &&:hover {
+            color: #577342;
+          }
+        }
+      }
+    }
+  }
+}

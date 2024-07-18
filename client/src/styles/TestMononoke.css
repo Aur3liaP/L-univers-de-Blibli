@@ -1,0 +1,25 @@
+.parallax-mononoke {
+  margin: 0;
+  background-color: #030303;
+  overflow: hidden;
+  font-family: sans-serif;
+  color: #9dd0e0;
+  height: 100vh;
+  position: relative;
+}
+
+.horizontal-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#header {
+  height: 100%;
+  width: 100%;
+}
+
+#kodama-graphic {
+  height: 100%;
+  opacity: 1;
+}

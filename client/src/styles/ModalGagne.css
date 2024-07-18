@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Ghibli";
+  src: url("../assets/fonts/Ghibli-Font/Eyad\ Al-Samman\ -\ Ghibli.otf")
+    format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --fontP: "Ghibli", sans-serif;
+}
+
+.modal-gagne-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.modal-gagne-content {
+  background: white;
+  border-radius: 20px;
+  max-width: 40vw;
+  max-height: 95vh;
+  text-align: center;
+  font-family: var(--fontP);
+
+  .bg-modal {
+    width: 100%;
+    max-height: 95vh;
+  }
+
+  .bulle-modal-gagne {
+    position: absolute;
+    background: #ede5df;
+    border-radius: 50%;
+    top: 33vh;
+    left: 42vw;
+    width: 35vh;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+    box-shadow: 2px 2px 2px grey;
+    padding: 3vh;
+  }
+}
+
+.modal-gagne-close {
+  position: absolute;
+  top: 2vh;
+  left: 2vh;
+  background: none;
+  border: none;
+  font-size: 4vh;
+}

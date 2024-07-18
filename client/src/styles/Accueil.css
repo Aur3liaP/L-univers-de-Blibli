@@ -1,0 +1,273 @@
+@font-face {
+  font-family: "Ghibli";
+  src: url("../assets/fonts/Ghibli-Font/Eyad\ Al-Samman\ -\ Ghibli.otf")
+    format("otf");
+  font-weight: normal;
+  font-size: normal;
+}
+
+:root {
+  --fontP: "Ghibli", sans-serif;
+}
+
+.accueil {
+  overflow: hidden;
+
+  .row-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 350px) and (max-width: 870px) {
+    .row-div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .PageCredit {
+    font-family: var(--fontP);
+    font-size: 0.8rem;
+  }
+}
+
+.parallax-accueil {
+  overflow: hidden;
+  position: relative;
+
+  .nav-bar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+
+  .full-width-image {
+    width: 100%;
+    max-height: 100vh;
+    display: block;
+    aspect-ratio: 16 / 9;
+  }
+
+  .parallax-layers {
+    position: absolute;
+  }
+
+  .parallax-totoro {
+    height: 32vw;
+    bottom: -5vh;
+    left: 36%;
+    z-index: 2;
+  }
+
+  /* @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .parallax-totoro {
+      left: 29%;
+    }
+  } */
+
+  /* @media screen and (min-width: 350px) and (max-width: 870px) {
+    .parallax-totoro {
+      left: 29%;
+      height: 40vh;
+    }
+  } */
+
+  .clouds {
+    width: 40%;
+    opacity: 0.95;
+  }
+  .accueil-cloud1 {
+    top: 20vh;
+    left: 15vh;
+  }
+  .accueil-cloud2 {
+    top: 7vh;
+    right: 15vh;
+  }
+  .accueil-cloud-shadow1 {
+    width: 40%;
+    transform: rotate(5deg);
+    left: 3vh;
+    bottom: 3vh;
+  }
+  .accueil-cloud-shadow2 {
+    width: 40%;
+    transform: rotate(5deg);
+    right: 29vh;
+    bottom: 3vh;
+  }
+}
+
+.rectangle-bleu {
+  background-image: linear-gradient(
+    to right bottom,
+    #92daf6,
+    #7dcded,
+    #67c0e5,
+    #50b4dc,
+    #32a7d4
+  );
+  height: 50vh;
+  width: 85vw;
+  /* transform: translate(8%, 0%); */
+  margin: 10vh auto;
+  border-radius: 6px;
+  box-shadow: 1px 1px 1px grey;
+
+  .accueil-text {
+    display: flex;
+    width: 70vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+
+    h2 {
+      text-align: center;
+      font-size: clamp(1rem, 0.2588rem + 0.9843vw, 1.5rem);
+      font-family: var(--fontP);
+    }
+
+    p {
+      text-align: justify;
+      font-size: clamp(0.7rem, 0.1471rem + 0.8575vw, 0.9rem);
+      line-height: clamp(1rem, 0.7353rem + 0.6706vw, 1.3rem);
+      font-family: var(--fontP);
+    }
+  }
+
+  @media screen and (min-width: 350px) and (max-width: 870px) {
+    .accueil-text {
+      margin: 0;
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 870px) {
+  .rectangle-bleu {
+    margin: 5vh auto;
+  }
+}
+
+.robot-container {
+  background: url(/src/assets/images/laputa.png);
+  background-size: cover;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 104vh;
+  gap: 22vh;
+
+  .feuilles1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 27vw;
+  }
+  .feuilles2 {
+    position: absolute;
+    width: 33vw;
+    right: 0;
+    top: 0;
+  }
+  .feuilles3 {
+    position: absolute;
+    top: 0;
+    width: 35vw;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .button-redirection img {
+    height: 38vh;
+  }
+
+  @media screen and (min-width: 350px) and (max-width: 870px) {
+    .button-redirection img {
+      height: 35vh;
+    }
+  }
+
+  h1 {
+    font-family: var(--fontP);
+    text-align: center;
+    align-content: space-around;
+    height: 10vh;
+  }
+}
+
+/* .cadre-accueil {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1500px;
+  height: 290px;
+} */
+
+.susuwatari {
+  position: absolute;
+  right: -4vh;
+  width: 15vh;
+  top: -4vh;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .susuwatari {
+    position: absolute;
+    right: -4vh;
+    width: 15vh;
+    top: 17vh;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 767px) {
+  .susuwatari {
+    position: absolute;
+    right: -4vh;
+    width: 8vh;
+    top: -4vh;
+  }
+}
+
+.studioGhibli {
+  height: 40vh;
+  padding-bottom: 3vh;
+  filter: invert(100%);
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30vh;
+
+  .button-redirection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    background: #ffffff52;
+    border-radius: 5px;
+    padding: 0vh 2vh 1vh 2vh;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 870px) {
+  .button-container {
+    gap: 1.5vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 2.5%;
+    height: auto;
+    width: 65%;
+  }
+}

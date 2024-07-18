@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Ghibli";
+  src: url("../assets/fonts/Ghibli-Font/Eyad-Al-Samman-Ghibli.otf")
+    format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.blindtest-bg {
+  overflow: hidden;
+  height: 100vh;
+  p {
+    font-family: var(--fontP);
+    font-size: 3vh;
+  }
+
+  .calcifer {
+    top: 60%;
+  }
+
+  .bubble {
+    top: 14%;
+  }
+  .music-totoro {
+    width: 25vh;
+    position: absolute;
+    bottom: 0;
+    right: 41%;
+  }
+
+  .countdown {
+    border-radius: 50%;
+    width: 14vh;
+    height: 14vh;
+    position: absolute;
+    top: 5%;
+    left: 49%;
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      color: white;
+      font-size: 6vh;
+    }
+  }
+
+  .rounds {
+    text-align: center;
+    width: 50%;
+    height: 45vh;
+    position: absolute;
+    bottom: 25%;
+    left: 25%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10%;
+    row-gap: 15%;
+  }
+  .answers {
+    background-color: aliceblue;
+    box-shadow: 1px 1px 1px grey;
+    border-radius: 6px;
+    opacity: 0.72;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+    cursor: pointer;
+
+    &&:hover {
+      transform: scale(1.02);
+    }
+  }
+}
+.round1 {
+  display: block;
+}
+
+.round2 {
+  display: none;
+}

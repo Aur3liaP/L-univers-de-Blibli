@@ -1,0 +1,98 @@
+.music-button-container {
+  display: flex;
+  align-items: center;
+  top: 4vh;
+  position: absolute;
+  right: 1vh;
+  gap: 5vh;
+  z-index: 2;
+}
+
+.slider {
+  --slider-width: 100px; /* Ajustez cette valeur si nécessaire */
+  --slider-height: 6px;
+  --slider-bg: #ffffff75;
+  --slider-border-radius: 999px;
+  --level-color: rgb(82, 82, 82);
+  --level-transition-duration: 0.1s;
+  --icon-margin: 15px;
+  --icon-color: var(--slider-bg);
+  --icon-size: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Espace entre la range et l'icône */
+}
+
+.slider .level {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: var(--slider-width);
+  height: var(--slider-height);
+  background: var(--slider-bg);
+  overflow: hidden;
+  border-radius: var(--slider-border-radius);
+  transition: height var(--level-transition-duration);
+  cursor: inherit;
+}
+
+.slider .level::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 0;
+  height: 0;
+  box-shadow: -200px 0 0 200px var(--level-color);
+}
+
+.slider:hover .level {
+  height: calc(var(--slider-height) * 2);
+}
+
+.container {
+  --color: rgb(82, 82, 82);
+  --size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: var(--size);
+  user-select: none;
+  fill: var(--color);
+}
+
+.container .mute,
+.container .voice {
+  position: absolute;
+  animation: keyframes-fill 0.5s;
+}
+
+.container .voice {
+  display: none;
+}
+
+.container input:checked ~ .mute {
+  display: none;
+}
+
+.container input:checked ~ .voice {
+  display: block;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+@keyframes keyframes-fill {
+  0% {
+    transform: rotate(0deg) scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(-10deg) scale(1.2);
+  }
+}

@@ -1,0 +1,201 @@
+.bg-ou-est-charlie {
+  position: relative;
+  background: url("../assets/images/bgtotoro.png");
+  background-size: cover;
+
+  .ou-est-charlie {
+    position: relative;
+    background: url("../assets/images/OuestTotorook.png") no-repeat center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    min-width: 150vh;
+    max-width: 150vh;
+    /* Pour coller l'image au bord du viewport*/
+    min-height: 100vh;
+    max-height: 100vh;
+    margin: 0 auto;
+
+    #totoro {
+      position: absolute;
+      height: 10%;
+      width: 5%;
+      /* border: 3px rgb(47, 255, 0) solid; */
+      top: 36%;
+      left: 71.3%;
+      z-index: 99;
+      transform: translate(-50%, -50%);
+    }
+
+    #mr-navet {
+      position: absolute;
+      height: 6%;
+      width: 2.5%;
+      /* border: 3px rgb(47, 255, 0) solid; */
+      top: 70.5%;
+      left: 33%;
+      z-index: 99;
+      transform: translate(-50%, -50%);
+    }
+
+    #baron {
+      position: absolute;
+      height: 5%;
+      width: 3%;
+      /* border: 3px rgb(47, 255, 0) solid; */
+      top: 95%;
+      left: 55.5%;
+      z-index: 99;
+      transform: translate(-50%, -50%);
+    }
+
+    #sans-visage {
+      position: absolute;
+      height: 7%;
+      width: 2.5%;
+      /* border: 3px rgb(47, 255, 0) solid; */
+      top: 18%;
+      left: 55.7%;
+      z-index: 99;
+      transform: translate(-50%, -50%);
+    }
+
+    #homme-araignee {
+      position: absolute;
+      height: 4%;
+      width: 3%;
+      /* border: 3px rgb(47, 255, 0) solid; */
+      top: 77%;
+      left: 22.7%;
+      z-index: 99;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .ou-est-charlie {
+    min-width: 130vh;
+    max-width: 130vh;
+  }
+
+  #totoro {
+    top: 35%;
+    left: 70%;
+    height: 8%;
+    width: 4%;
+  }
+
+  #mr-navet {
+    top: 68%;
+    left: 30%;
+    height: 5%;
+    width: 2%;
+  }
+
+  #baron {
+    top: 93%;
+    left: 54%;
+    height: 4%;
+    width: 2.5%;
+  }
+
+  #sans-visage {
+    top: 17%;
+    left: 54%;
+    height: 6%;
+    width: 2%;
+  }
+
+  #homme-araignee {
+    top: 75%;
+    left: 20%;
+    height: 3%;
+    width: 2.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ou-est-charlie {
+    min-width: 100vh;
+    max-width: 100vh;
+  }
+
+  #totoro {
+    top: 34%;
+    left: 68%;
+    height: 7%;
+    width: 3.5%;
+  }
+
+  #mr-navet {
+    top: 66%;
+    left: 28%;
+    height: 4%;
+    width: 1.5%;
+  }
+
+  #baron {
+    top: 91%;
+    left: 52%;
+    height: 3.5%;
+    width: 2%;
+  }
+
+  #sans-visage {
+    top: 16%;
+    left: 52%;
+    height: 5%;
+    width: 1.5%;
+  }
+
+  #homme-araignee {
+    top: 73%;
+    left: 18%;
+    height: 2.5%;
+    width: 2%;
+  }
+}
+
+@media (max-width: 480px) {
+  .ou-est-charlie {
+    min-width: 70vh;
+    max-width: 70vh;
+  }
+
+  #totoro {
+    top: 33%;
+    left: 65%;
+    height: 6%;
+    width: 3%;
+  }
+
+  #mr-navet {
+    top: 64%;
+    left: 25%;
+    height: 3%;
+    width: 1%;
+  }
+
+  #baron {
+    top: 89%;
+    left: 50%;
+    height: 3%;
+    width: 1.5%;
+  }
+
+  #sans-visage {
+    top: 15%;
+    left: 50%;
+    height: 4%;
+    width: 1%;
+  }
+
+  #homme-araignee {
+    top: 71%;
+    left: 15%;
+    height: 2%;
+    width: 1.5%;
+  }
+}

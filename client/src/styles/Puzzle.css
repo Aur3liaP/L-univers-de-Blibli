@@ -1,0 +1,52 @@
+.puzzle-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  .puzzle {
+    .calcifer {
+      top: 62%;
+    }
+    .bubble {
+      top: 15%;
+    }
+
+    .puzzle-board {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /* gap: 5px; */
+      width: 80vh;
+
+      .tile {
+        overflow: hidden;
+
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}

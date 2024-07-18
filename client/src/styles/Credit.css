@@ -1,0 +1,60 @@
+.box1 {
+  background-color: rgb(146, 169, 99);
+  background-image: url("../assets/images/Kodama.Credit.png"); /*  le chemin pour réccuperer l'image */
+  background-size: cover; /* Pour couvrir toute la boîte */
+  background-repeat: no-repeat; /* Pour éviter que l'image se répète */
+  background-position: center center; /* Centre l'image de fond */
+  background-attachment: fixed; /* Garde l'image fixe lors du défilement */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Pour centrer le contenu verticalement */
+  position: absolute;
+  /* Pour couvrir toute la page */
+  top: 0;
+  left: 0;
+}
+
+.titre {
+  z-index: 10; /* Assurez-vous que le texte est au-dessus de l'image de fond */
+  color: white; /* Une couleur de texte qui contraste bien avec l'arrière-plan */
+  text-align: center; /* Centre le texte à l'intérieur de l'élément h1 */
+  position: absolute;
+  top: 2vh;
+  font-size: 6vh;
+  font-family: "Ghibli";
+  text-shadow: black 3px -1px 18px;
+}
+
+/* responsive */
+@media (max-width: 1200px) {
+  .titre {
+    font-size: 6vh;
+  }
+}
+
+@media (max-width: 992px) {
+  .titre {
+    font-size: 4vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .titre {
+    font-size: 2.5vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .titre {
+    font-size: 3vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .titre {
+    font-size: 2.5vh;
+  }
+}

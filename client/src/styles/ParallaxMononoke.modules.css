@@ -1,0 +1,50 @@
+.parallax-mononoke {
+  margin: 0;
+  background-color: #030303;
+  overflow: hidden;
+  font-family: sans-serif;
+  color: #9dd0e0;
+  height: 100vh;
+  position: relative;
+}
+
+.horizontal-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 98vh;
+  opacity: 0;
+}
+
+#header {
+  height: 100%;
+  width: 100%;
+}
+
+#kodama-graphic {
+  height: 100%;
+  opacity: 1;
+}
+
+.controls {
+  position: fixed;
+  bottom: 20px;
+  z-index: 1;
+  width: 100%;
+  .btn {
+    position: relative;
+    cursor: pointer;
+    opacity: 0.25;
+    .btn-label {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      margin: 0;
+      margin-top: 5px;
+    }
+  }
+
+  .replay-btn {
+    float: left;
+  }
+}

@@ -1,0 +1,20 @@
+/* Parallax.css */
+
+.parallax {
+  background: url("../assets/images/le-vent-se-leve.jpg") repeat fixed 100%;
+  margin-top: 20vh;
+  background-size: cover;
+  font-family: "Ghibli";
+
+  .parallax-inner {
+    padding-top: 32%;
+    padding-bottom: 32%;
+
+    h2 {
+      text-align: center;
+      font-size: 8vh;
+      color: white;
+      text-shadow: 5px 3px 6px rgba(0, 0, 0, 0.66);
+    }
+  }
+}

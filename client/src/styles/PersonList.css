@@ -1,0 +1,60 @@
+.equipes {
+  z-index: 10; /* le texte est au-dessus de l'image de fond */
+  color: white; /* Une couleur de texte */
+  text-align: center; /* Centre le texte à l'intérieur de l'élément h1 */
+  text-shadow: black 3px -1px 18px;
+  padding: 27px;
+  position: absolute;
+  bottom: 6%;
+  font-family: "Ghibli";
+  font-size: 5.5vh;
+
+  li {
+    transform: translate(0);
+    list-style-type: none; /*retire les points*/
+    margin-bottom: 1rem; /*Ajoute de l'éspace en dessous de chaque li*/
+  }
+}
+
+.texte-animate {
+  opacity: 1; /* le texte est initialement invisible */
+  transform: translateX(50px); /* décalage vers le bas */
+}
+
+/* responsive */
+@media (max-width: 1200px) {
+  .equipes {
+    font-size: 5.5vh;
+    /* padding: 20px; */
+  }
+}
+
+@media (max-width: 992px) {
+  .equipes {
+    font-size: 5vh;
+    /* padding: 15px; */
+  }
+}
+
+@media (max-width: 768px) {
+  .equipes {
+    font-size: 4vh;
+    /* padding: 10px; */
+  }
+}
+
+@media (max-width: 576px) {
+  .equipes {
+    font-size: 3.5vh;
+    /* padding: 8px;
+    bottom: 10%; */
+  }
+}
+
+@media (max-width: 400px) {
+  .equipes {
+    font-size: 2.5vh;
+    /* padding: 6px; */
+    /* bottom: 12%; */
+  }
+}

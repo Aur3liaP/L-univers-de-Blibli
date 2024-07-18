@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Ghibli";
+  src: url("../assets/fonts/Ghibli-Font/Eyad-Al-Samman-Ghibli.otf")
+    format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container-totoro {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(rgb(0, 69, 161), rgb(99, 142, 203));
+  overflow: hidden;
+
+  .navBar {
+    /* Pour cacher le titre */
+    .univers-blibli {
+      display: none;
+    }
+  }
+  section {
+    width: 100vw;
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+
+    .totoro3D {
+      position: absolute;
+      height: 102vh;
+      width: 49vw;
+      cursor: pointer;
+      left: 6vw;
+      top: 4vh;
+    }
+
+    .texte {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    p {
+      font-family: "Ghibli";
+      font-size: 6vh;
+      text-shadow: 1px 1px 2px #333132;
+      line-height: 7vh;
+      margin-right: 0.9vw;
+    }
+
+    .test {
+      margin: 0 auto;
+      margin-top: 9vh;
+      && :hover {
+        transform: scale(1.1);
+      }
+      img {
+        transition: 0.3s ease-in-out;
+        width: 8vw;
+        min-width: 100px;
+        cursor: pointer;
+        filter: invert(100%);
+      }
+    }
+    @media (max-width: 1450px) {
+      p {
+        width: 54vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-totoro .texte p {
+    font-size: 5vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-totoro {
+    font-family: "Ghibli";
+    section {
+      align-items: center;
+    }
+  }
+  .container-totoro .texte p {
+    font-size: 5.5vh;
+    line-height: 6vh;
+    position: relative;
+  }
+  .test img {
+    margin: 0 auto;
+  }
+  .totoro3D {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .texte .test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
