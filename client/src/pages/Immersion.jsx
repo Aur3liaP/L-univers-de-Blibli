@@ -40,7 +40,7 @@ function Immersion() {
         }}
       >
         <Spline
-          scene="https://prod.spline.design/Cyf1Tj69w4U5S38V/scene.splinecode"
+          scene="https://prod.spline.design/Y8AwENFbROwHWMa3/scene.splinecode"
           onLoad={() => setIsSplineLoaded(true)}
           className="spline-container"
         />
